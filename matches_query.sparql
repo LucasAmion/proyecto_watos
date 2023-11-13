@@ -1,0 +1,61 @@
+PREFIX ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?MATCH_IRI a ex:Match;
+    ex:tourney ?TORNEY_IRI;
+    ex:match_num ?MATCH_NUM;
+    ex:winner_id ?WINNER_IRI;
+    ex:loser_id ?LOSER_IRI;
+    ex:score ?score;
+    ex:best_of ?BEST_OF;
+    ex:round ?ROUND;
+    ex:minutes ?MINUTES;
+    ex:w_ace ?W_ACE;
+    ex:w_df ?W_DF;
+    ex:w_svpt ?W_SVPT;
+    ex:w_1stIn ?W_1STIN;
+    ex:w_1stWon ?W_1STWON;
+    ex:w_2ndWon ?W_2NDWON;
+    ex:w_SvGms ?W_SVGMS;
+    ex:w_bpSaved ?W_BPSAVED;
+    ex:w_bpFaced ?W_BPFACED;
+    ex:l_ace ?L_ACE;
+    ex:l_df ?L_DF;
+    ex:l_svpt ?L_SVPT;
+    ex:l_1stIn ?L_1STIN;
+    ex:l_1stWon ?L_1STWON;
+    ex:l_2ndWon ?L_2NDWON;
+    ex:l_SvGms ?L_SVGMS;
+    ex:l_bpSaved ?L_BPSAVED;
+    ex:l_bpFaced ?L_BPFACED;
+  .
+}
+WHERE {
+  BIND (IRI(CONCAT('http://ex.org/a#', 'Match-', ?tourney_id, '-', ?match_num)) AS ?MATCH_IRI)
+  BIND (IRI(CONCAT('http://ex.org/a#', 'Tournament-', ?tourney_id)) AS ?TORNEY_IRI)
+  BIND (IRI(CONCAT('http://ex.org/a#', 'Player-', ?winner_id)) AS ?WINNER_IRI)
+  BIND (IRI(CONCAT('http://ex.org/a#', 'Player-', ?loser_id)) AS ?LOSER_IRI)
+  BIND (xsd:integer(?match_num) AS ?MATCH_NUM)
+  BIND (xsd:integer(?best_of) AS ?BEST_OF)
+  BIND (xsd:integer(?round) AS ?ROUND)
+  BIND (xsd:integer(?minutes) AS ?MINUTES)
+  BIND (xsd:integer(?w_ace) AS ?W_ACE)
+  BIND (xsd:integer(?w_df) AS ?W_DF)
+  BIND (xsd:integer(?w_svpt) AS ?W_SVPT)
+  BIND (xsd:integer(?w_1stIn) AS ?W_1STIN)
+  BIND (xsd:integer(?w_1stWon) AS ?W_1STWON)
+  BIND (xsd:integer(?w_2ndWon) AS ?W_2NDWON)
+  BIND (xsd:integer(?w_SvGms) AS ?W_SVGMS)
+  BIND (xsd:integer(?w_bpSaved) AS ?W_BPSAVED)
+  BIND (xsd:integer(?w_bpFaced) AS ?W_BPFACED)
+  BIND (xsd:integer(?l_ace) AS ?L_ACE)
+  BIND (xsd:integer(?l_df) AS ?L_DF)
+  BIND (xsd:integer(?l_svpt) AS ?L_SVPT)
+  BIND (xsd:integer(?l_1stIn) AS ?L_1STIN)
+  BIND (xsd:integer(?l_1stWon) AS ?L_1STWON)
+  BIND (xsd:integer(?l_2ndWon) AS ?L_2NDWON)
+  BIND (xsd:integer(?l_SvGms) AS ?L_SVGMS)
+  BIND (xsd:integer(?l_bpSaved) AS ?L_BPSAVED)
+  BIND (xsd:integer(?l_bpFaced) AS ?L_BPFACED)
+}
