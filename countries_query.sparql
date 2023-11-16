@@ -1,0 +1,12 @@
+PREFIX ex: <http://ex.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?COUNTRY_IRI a ex:Country;
+    ex:name ?country;
+    ex:ioc ?ioc;
+  .
+}
+WHERE {
+  BIND (IRI(CONCAT('http://ex.org/a#', 'Country-', ?iso_code)) AS ?COUNTRY_IRI)
+}

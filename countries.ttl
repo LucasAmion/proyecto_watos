@@ -1,0 +1,803 @@
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:  <http://ex.org/a#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:Country-AF  rdf:type  ex:Country ;
+        ex:name  "Afghanistan" ;
+        ex:ioc   "AFG" .
+
+ex:Country-AL  rdf:type  ex:Country ;
+        ex:name  "Albania" ;
+        ex:ioc   "ALB" .
+
+ex:Country-DZ  rdf:type  ex:Country ;
+        ex:name  "Algeria" ;
+        ex:ioc   "ALG" .
+
+ex:Country-AS  rdf:type  ex:Country ;
+        ex:name  "American Samoa*" ;
+        ex:ioc   "ASA" .
+
+ex:Country-AD  rdf:type  ex:Country ;
+        ex:name  "Andorra" ;
+        ex:ioc   "AND" .
+
+ex:Country-AO  rdf:type  ex:Country ;
+        ex:name  "Angola" ;
+        ex:ioc   "ANG" .
+
+ex:Country-AG  rdf:type  ex:Country ;
+        ex:name  "Antigua and Barbuda" ;
+        ex:ioc   "ANT" .
+
+ex:Country-AR  rdf:type  ex:Country ;
+        ex:name  "Argentina" ;
+        ex:ioc   "ARG" .
+
+ex:Country-AM  rdf:type  ex:Country ;
+        ex:name  "Armenia" ;
+        ex:ioc   "ARM" .
+
+ex:Country-AW  rdf:type  ex:Country ;
+        ex:name  "Aruba*" ;
+        ex:ioc   "ARU" .
+
+ex:Country-AU  rdf:type  ex:Country ;
+        ex:name  "Australia" ;
+        ex:ioc   "AUS" .
+
+ex:Country-AT  rdf:type  ex:Country ;
+        ex:name  "Austria" ;
+        ex:ioc   "AUT" .
+
+ex:Country-AZ  rdf:type  ex:Country ;
+        ex:name  "Azerbaijan" ;
+        ex:ioc   "AZE" .
+
+ex:Country-BS  rdf:type  ex:Country ;
+        ex:name  "Bahamas" ;
+        ex:ioc   "BAH" .
+
+ex:Country-BH  rdf:type  ex:Country ;
+        ex:name  "Bahrain" ;
+        ex:ioc   "BRN" .
+
+ex:Country-BD  rdf:type  ex:Country ;
+        ex:name  "Bangladesh" ;
+        ex:ioc   "BAN" .
+
+ex:Country-BB  rdf:type  ex:Country ;
+        ex:name  "Barbados" ;
+        ex:ioc   "BAR" .
+
+ex:Country-BY  rdf:type  ex:Country ;
+        ex:name  "Belarus" ;
+        ex:ioc   "BLR" .
+
+ex:Country-BE  rdf:type  ex:Country ;
+        ex:name  "Belgium" ;
+        ex:ioc   "BEL" .
+
+ex:Country-BZ  rdf:type  ex:Country ;
+        ex:name  "Belize" ;
+        ex:ioc   "BIZ" .
+
+ex:Country-BM  rdf:type  ex:Country ;
+        ex:name  "Bermuda*" ;
+        ex:ioc   "BER" .
+
+ex:Country-BJ  rdf:type  ex:Country ;
+        ex:name  "Benin" ;
+        ex:ioc   "BEN" .
+
+ex:Country-BT  rdf:type  ex:Country ;
+        ex:name  "Bhutan" ;
+        ex:ioc   "BHU" .
+
+ex:Country-BO  rdf:type  ex:Country ;
+        ex:name  "Bolivia" ;
+        ex:ioc   "BOL" .
+
+ex:Country-BA  rdf:type  ex:Country ;
+        ex:name  "Bosnia and Herzegovina" ;
+        ex:ioc   "BIH" .
+
+ex:Country-BW  rdf:type  ex:Country ;
+        ex:name  "Botswana" ;
+        ex:ioc   "BOT" .
+
+ex:Country-BR  rdf:type  ex:Country ;
+        ex:name  "Brazil" ;
+        ex:ioc   "BRA" .
+
+ex:Country-VG  rdf:type  ex:Country ;
+        ex:name  "British Virgin Islands" ;
+        ex:ioc   "IVB" .
+
+ex:Country-BN  rdf:type  ex:Country ;
+        ex:name  "Brunei" ;
+        ex:ioc   "BRU" .
+
+ex:Country-BG  rdf:type  ex:Country ;
+        ex:name  "Bulgaria" ;
+        ex:ioc   "BUL" .
+
+ex:Country-BF  rdf:type  ex:Country ;
+        ex:name  "Burkina Faso" ;
+        ex:ioc   "BUR" .
+
+ex:Country-BI  rdf:type  ex:Country ;
+        ex:name  "Burundi" ;
+        ex:ioc   "BDI" .
+
+ex:Country-KH  rdf:type  ex:Country ;
+        ex:name  "Cambodia" ;
+        ex:ioc   "CAM" .
+
+ex:Country-CM  rdf:type  ex:Country ;
+        ex:name  "Cameroon" ;
+        ex:ioc   "CMR" .
+
+ex:Country-CA  rdf:type  ex:Country ;
+        ex:name  "Canada" ;
+        ex:ioc   "CAN" .
+
+ex:Country-CV  rdf:type  ex:Country ;
+        ex:name  "Cape Verde" ;
+        ex:ioc   "CPV" .
+
+ex:Country-KY  rdf:type  ex:Country ;
+        ex:name  "Cayman Islands*" ;
+        ex:ioc   "CAY" .
+
+ex:Country-CF  rdf:type  ex:Country ;
+        ex:name  "Central African Republic" ;
+        ex:ioc   "CAF" .
+
+ex:Country-TD  rdf:type  ex:Country ;
+        ex:name  "Chad" ;
+        ex:ioc   "CHA" .
+
+ex:Country-CL  rdf:type  ex:Country ;
+        ex:name  "Chile" ;
+        ex:ioc   "CHI" .
+
+ex:Country-CN  rdf:type  ex:Country ;
+        ex:name  "China" ;
+        ex:ioc   "CHN" .
+
+ex:Country-CO  rdf:type  ex:Country ;
+        ex:name  "Colombia" ;
+        ex:ioc   "COL" .
+
+ex:Country-KM  rdf:type  ex:Country ;
+        ex:name  "Comoros" ;
+        ex:ioc   "COM" .
+
+ex:Country-CG  rdf:type  ex:Country ;
+        ex:name  "Congo" ;
+        ex:ioc   "CGO" .
+
+ex:Country-CD  rdf:type  ex:Country ;
+        ex:name  "Congo, Dem Rep" ;
+        ex:ioc   "COD" .
+
+ex:Country-CK  rdf:type  ex:Country ;
+        ex:name  "Cook Islands" ;
+        ex:ioc   "COK" .
+
+ex:Country-CR  rdf:type  ex:Country ;
+        ex:name  "Costa Rica" ;
+        ex:ioc   "CRC" .
+
+ex:Country-CI  rdf:type  ex:Country ;
+        ex:name  "Cote d'Ivoire" ;
+        ex:ioc   "CIV" .
+
+ex:Country-HR  rdf:type  ex:Country ;
+        ex:name  "Croatia" ;
+        ex:ioc   "CRO" .
+
+ex:Country-CU  rdf:type  ex:Country ;
+        ex:name  "Cuba" ;
+        ex:ioc   "CUB" .
+
+ex:Country-CY  rdf:type  ex:Country ;
+        ex:name  "Cyprus" ;
+        ex:ioc   "CYP" .
+
+ex:Country-CZ  rdf:type  ex:Country ;
+        ex:name  "Czech Republic" ;
+        ex:ioc   "CZE" .
+
+ex:Country-DK  rdf:type  ex:Country ;
+        ex:name  "Denmark" ;
+        ex:ioc   "DEN" .
+
+ex:Country-DJ  rdf:type  ex:Country ;
+        ex:name  "Djibouti" ;
+        ex:ioc   "DJI" .
+
+ex:Country-DM  rdf:type  ex:Country ;
+        ex:name  "Dominica" ;
+        ex:ioc   "DMA" .
+
+ex:Country-DO  rdf:type  ex:Country ;
+        ex:name  "Dominican Republic" ;
+        ex:ioc   "DOM" .
+
+ex:Country-TL  rdf:type  ex:Country ;
+        ex:name  "East Timor (Timor-Leste)" ;
+        ex:ioc   "TLS" .
+
+ex:Country-EC  rdf:type  ex:Country ;
+        ex:name  "Ecuador" ;
+        ex:ioc   "ECU" .
+
+ex:Country-EG  rdf:type  ex:Country ;
+        ex:name  "Egypt" ;
+        ex:ioc   "EGY" .
+
+ex:Country-SV  rdf:type  ex:Country ;
+        ex:name  "El Salvador" ;
+        ex:ioc   "ESA" .
+
+ex:Country-GQ  rdf:type  ex:Country ;
+        ex:name  "Equatorial Guinea" ;
+        ex:ioc   "GEQ" .
+
+ex:Country-ER  rdf:type  ex:Country ;
+        ex:name  "Eritrea" ;
+        ex:ioc   "ERI" .
+
+ex:Country-EE  rdf:type  ex:Country ;
+        ex:name  "Estonia" ;
+        ex:ioc   "EST" .
+
+ex:Country-ET  rdf:type  ex:Country ;
+        ex:name  "Ethiopia" ;
+        ex:ioc   "ETH" .
+
+ex:Country-FJ  rdf:type  ex:Country ;
+        ex:name  "Fiji" ;
+        ex:ioc   "FIJ" .
+
+ex:Country-FI  rdf:type  ex:Country ;
+        ex:name  "Finland" ;
+        ex:ioc   "FIN" .
+
+ex:Country-FR  rdf:type  ex:Country ;
+        ex:name  "France" ;
+        ex:ioc   "FRA" .
+
+ex:Country-GA  rdf:type  ex:Country ;
+        ex:name  "Gabon" ;
+        ex:ioc   "GAB" .
+
+ex:Country-GM  rdf:type  ex:Country ;
+        ex:name  "Gambia" ;
+        ex:ioc   "GAM" .
+
+ex:Country-GE  rdf:type  ex:Country ;
+        ex:name  "Georgia" ;
+        ex:ioc   "GEO" .
+
+ex:Country-DE  rdf:type  ex:Country ;
+        ex:name  "Germany" ;
+        ex:ioc   "GER" .
+
+ex:Country-GH  rdf:type  ex:Country ;
+        ex:name  "Ghana" ;
+        ex:ioc   "GHA" .
+
+ex:Country-GR  rdf:type  ex:Country ;
+        ex:name  "Greece" ;
+        ex:ioc   "GRE" .
+
+ex:Country-GD  rdf:type  ex:Country ;
+        ex:name  "Grenada" ;
+        ex:ioc   "GRN" .
+
+ex:Country-GU  rdf:type  ex:Country ;
+        ex:name  "Guam" ;
+        ex:ioc   "GUM" .
+
+ex:Country-GT  rdf:type  ex:Country ;
+        ex:name  "Guatemala" ;
+        ex:ioc   "GUA" .
+
+ex:Country-GN  rdf:type  ex:Country ;
+        ex:name  "Guinea" ;
+        ex:ioc   "GUI" .
+
+ex:Country-GW  rdf:type  ex:Country ;
+        ex:name  "Guinea-Bissau" ;
+        ex:ioc   "GBS" .
+
+ex:Country-GY  rdf:type  ex:Country ;
+        ex:name  "Guyana" ;
+        ex:ioc   "GUY" .
+
+ex:Country-HT  rdf:type  ex:Country ;
+        ex:name  "Haiti" ;
+        ex:ioc   "HAI" .
+
+ex:Country-HN  rdf:type  ex:Country ;
+        ex:name  "Honduras" ;
+        ex:ioc   "HON" .
+
+ex:Country-HK  rdf:type  ex:Country ;
+        ex:name  "Hong Kong*" ;
+        ex:ioc   "HKG" .
+
+ex:Country-HU  rdf:type  ex:Country ;
+        ex:name  "Hungary" ;
+        ex:ioc   "HUN" .
+
+ex:Country-IS  rdf:type  ex:Country ;
+        ex:name  "Iceland" ;
+        ex:ioc   "ISL" .
+
+ex:Country-IN  rdf:type  ex:Country ;
+        ex:name  "India" ;
+        ex:ioc   "IND" .
+
+ex:Country-ID  rdf:type  ex:Country ;
+        ex:name  "Indonesia" ;
+        ex:ioc   "INA" .
+
+ex:Country-IR  rdf:type  ex:Country ;
+        ex:name  "Iran" ;
+        ex:ioc   "IRI" .
+
+ex:Country-IQ  rdf:type  ex:Country ;
+        ex:name  "Iraq" ;
+        ex:ioc   "IRQ" .
+
+ex:Country-IE  rdf:type  ex:Country ;
+        ex:name  "Ireland" ;
+        ex:ioc   "IRL" .
+
+ex:Country-IL  rdf:type  ex:Country ;
+        ex:name  "Israel" ;
+        ex:ioc   "ISR" .
+
+ex:Country-IT  rdf:type  ex:Country ;
+        ex:name  "Italy" ;
+        ex:ioc   "ITA" .
+
+ex:Country-JM  rdf:type  ex:Country ;
+        ex:name  "Jamaica" ;
+        ex:ioc   "JAM" .
+
+ex:Country-JP  rdf:type  ex:Country ;
+        ex:name  "Japan" ;
+        ex:ioc   "JPN" .
+
+ex:Country-JO  rdf:type  ex:Country ;
+        ex:name  "Jordan" ;
+        ex:ioc   "JOR" .
+
+ex:Country-KZ  rdf:type  ex:Country ;
+        ex:name  "Kazakhstan" ;
+        ex:ioc   "KAZ" .
+
+ex:Country-KE  rdf:type  ex:Country ;
+        ex:name  "Kenya" ;
+        ex:ioc   "KEN" .
+
+ex:Country-KP  rdf:type  ex:Country ;
+        ex:name  "Korea, North" ;
+        ex:ioc   "PRK" .
+
+ex:Country-KR  rdf:type  ex:Country ;
+        ex:name  "Korea, South" ;
+        ex:ioc   "KOR" .
+
+ex:Country-KW  rdf:type  ex:Country ;
+        ex:name  "Kuwait" ;
+        ex:ioc   "KUW" .
+
+ex:Country-KG  rdf:type  ex:Country ;
+        ex:name  "Kyrgyzstan" ;
+        ex:ioc   "KGZ" .
+
+ex:Country-LA  rdf:type  ex:Country ;
+        ex:name  "Laos" ;
+        ex:ioc   "LAO" .
+
+ex:Country-LV  rdf:type  ex:Country ;
+        ex:name  "Latvia" ;
+        ex:ioc   "LAT" .
+
+ex:Country-LB  rdf:type  ex:Country ;
+        ex:name  "Lebanon" ;
+        ex:ioc   "LIB" .
+
+ex:Country-LS  rdf:type  ex:Country ;
+        ex:name  "Lesotho" ;
+        ex:ioc   "LES" .
+
+ex:Country-LR  rdf:type  ex:Country ;
+        ex:name  "Liberia" ;
+        ex:ioc   "LBR" .
+
+ex:Country-LY  rdf:type  ex:Country ;
+        ex:name  "Libya" ;
+        ex:ioc   "LBA" .
+
+ex:Country-LI  rdf:type  ex:Country ;
+        ex:name  "Liechtenstein" ;
+        ex:ioc   "LIE" .
+
+ex:Country-LT  rdf:type  ex:Country ;
+        ex:name  "Lithuania" ;
+        ex:ioc   "LTU" .
+
+ex:Country-LU  rdf:type  ex:Country ;
+        ex:name  "Luxembourg" ;
+        ex:ioc   "LUX" .
+
+ex:Country-MK  rdf:type  ex:Country ;
+        ex:name  "Macedonia" ;
+        ex:ioc   "MKD" .
+
+ex:Country-MG  rdf:type  ex:Country ;
+        ex:name  "Madagascar" ;
+        ex:ioc   "MAD" .
+
+ex:Country-MW  rdf:type  ex:Country ;
+        ex:name  "Malawi" ;
+        ex:ioc   "MAW" .
+
+ex:Country-MY  rdf:type  ex:Country ;
+        ex:name  "Malaysia" ;
+        ex:ioc   "MAS" .
+
+ex:Country-MV  rdf:type  ex:Country ;
+        ex:name  "Maldives" ;
+        ex:ioc   "MDV" .
+
+ex:Country-ML  rdf:type  ex:Country ;
+        ex:name  "Mali" ;
+        ex:ioc   "MLI" .
+
+ex:Country-MT  rdf:type  ex:Country ;
+        ex:name  "Malta" ;
+        ex:ioc   "MLT" .
+
+ex:Country-MR  rdf:type  ex:Country ;
+        ex:name  "Mauritania" ;
+        ex:ioc   "MTN" .
+
+ex:Country-MU  rdf:type  ex:Country ;
+        ex:name  "Mauritius" ;
+        ex:ioc   "MRI" .
+
+ex:Country-MX  rdf:type  ex:Country ;
+        ex:name  "Mexico" ;
+        ex:ioc   "MEX" .
+
+ex:Country-FM  rdf:type  ex:Country ;
+        ex:name  "Micronesia" ;
+        ex:ioc   "FSM" .
+
+ex:Country-MD  rdf:type  ex:Country ;
+        ex:name  "Moldova" ;
+        ex:ioc   "MDA" .
+
+ex:Country-MC  rdf:type  ex:Country ;
+        ex:name  "Monaco" ;
+        ex:ioc   "MON" .
+
+ex:Country-MN  rdf:type  ex:Country ;
+        ex:name  "Mongolia" ;
+        ex:ioc   "MGL" .
+
+ex:Country-MA  rdf:type  ex:Country ;
+        ex:name  "Morocco" ;
+        ex:ioc   "MAR" .
+
+ex:Country-MZ  rdf:type  ex:Country ;
+        ex:name  "Mozambique" ;
+        ex:ioc   "MOZ" .
+
+ex:Country-MM  rdf:type  ex:Country ;
+        ex:name  "Burma" ;
+        ex:ioc   "MYA" .
+
+ex:Country-NR  rdf:type  ex:Country ;
+        ex:name  "Nauru" ;
+        ex:ioc   "NRU" .
+
+ex:Country-NP  rdf:type  ex:Country ;
+        ex:name  "Nepal" ;
+        ex:ioc   "NEP" .
+
+ex:Country-NL  rdf:type  ex:Country ;
+        ex:name  "Netherlands" ;
+        ex:ioc   "NED" .
+
+ex:Country-AN  rdf:type  ex:Country ;
+        ex:name  "Netherlands Antilles*" ;
+        ex:ioc   "AHO" .
+
+ex:Country-NZ  rdf:type  ex:Country ;
+        ex:name  "New Zealand" ;
+        ex:ioc   "NZL" .
+
+ex:Country-NI  rdf:type  ex:Country ;
+        ex:name  "Nicaragua" ;
+        ex:ioc   "NCA" .
+
+ex:Country-NE  rdf:type  ex:Country ;
+        ex:name  "Niger" ;
+        ex:ioc   "NIG" .
+
+ex:Country-NG  rdf:type  ex:Country ;
+        ex:name  "Nigeria" ;
+        ex:ioc   "NGR" .
+
+ex:Country-NO  rdf:type  ex:Country ;
+        ex:name  "Norway" ;
+        ex:ioc   "NOR" .
+
+ex:Country-OM  rdf:type  ex:Country ;
+        ex:name  "Oman" ;
+        ex:ioc   "OMA" .
+
+ex:Country-PK  rdf:type  ex:Country ;
+        ex:name  "Pakistan" ;
+        ex:ioc   "PAK" .
+
+ex:Country-PW  rdf:type  ex:Country ;
+        ex:name  "Palau" ;
+        ex:ioc   "PLW" .
+
+ex:Country-PS  rdf:type  ex:Country ;
+        ex:name  "Palestine, Occupied Territories" ;
+        ex:ioc   "PLE" .
+
+ex:Country-PA  rdf:type  ex:Country ;
+        ex:name  "Panama" ;
+        ex:ioc   "PAN" .
+
+ex:Country-PG  rdf:type  ex:Country ;
+        ex:name  "Papua New Guinea" ;
+        ex:ioc   "PNG" .
+
+ex:Country-PY  rdf:type  ex:Country ;
+        ex:name  "Paraguay" ;
+        ex:ioc   "PAR" .
+
+ex:Country-PE  rdf:type  ex:Country ;
+        ex:name  "Peru" ;
+        ex:ioc   "PER" .
+
+ex:Country-PH  rdf:type  ex:Country ;
+        ex:name  "Philippines" ;
+        ex:ioc   "PHI" .
+
+ex:Country-PL  rdf:type  ex:Country ;
+        ex:name  "Poland" ;
+        ex:ioc   "POL" .
+
+ex:Country-PT  rdf:type  ex:Country ;
+        ex:name  "Portugal" ;
+        ex:ioc   "POR" .
+
+ex:Country-PR  rdf:type  ex:Country ;
+        ex:name  "Puerto Rico*" ;
+        ex:ioc   "PUR" .
+
+ex:Country-QA  rdf:type  ex:Country ;
+        ex:name  "Qatar" ;
+        ex:ioc   "QAT" .
+
+ex:Country-RO  rdf:type  ex:Country ;
+        ex:name  "Romania" ;
+        ex:ioc   "ROM" .
+
+ex:Country-RU  rdf:type  ex:Country ;
+        ex:name  "Russia" ;
+        ex:ioc   "RUS" .
+
+ex:Country-RW  rdf:type  ex:Country ;
+        ex:name  "Rwanda" ;
+        ex:ioc   "RWA" .
+
+ex:Country-KN  rdf:type  ex:Country ;
+        ex:name  "Saint Kitts and Nevis" ;
+        ex:ioc   "SKN" .
+
+ex:Country-LC  rdf:type  ex:Country ;
+        ex:name  "Saint Lucia" ;
+        ex:ioc   "LCA" .
+
+ex:Country-VC  rdf:type  ex:Country ;
+        ex:name  "Saint Vincent and the Grenadines" ;
+        ex:ioc   "VIN" .
+
+ex:Country-WS  rdf:type  ex:Country ;
+        ex:name  "Samoa" ;
+        ex:ioc   "SAM" .
+
+ex:Country-SM  rdf:type  ex:Country ;
+        ex:name  "San Marino" ;
+        ex:ioc   "SMR" .
+
+ex:Country-ST  rdf:type  ex:Country ;
+        ex:name  "Sao Tome and Principe" ;
+        ex:ioc   "STP" .
+
+ex:Country-SA  rdf:type  ex:Country ;
+        ex:name  "Saudi Arabia" ;
+        ex:ioc   "KSA" .
+
+ex:Country-SN  rdf:type  ex:Country ;
+        ex:name  "Senegal" ;
+        ex:ioc   "SEN" .
+
+ex:Country-RS  rdf:type  ex:Country ;
+        ex:name  "Serbia" ;
+        ex:ioc   "SCG" .
+
+ex:Country-SC  rdf:type  ex:Country ;
+        ex:name  "Seychelles" ;
+        ex:ioc   "SEY" .
+
+ex:Country-SL  rdf:type  ex:Country ;
+        ex:name  "Sierra Leone" ;
+        ex:ioc   "SLE" .
+
+ex:Country-SG  rdf:type  ex:Country ;
+        ex:name  "Singapore" ;
+        ex:ioc   "SIN" .
+
+ex:Country-SK  rdf:type  ex:Country ;
+        ex:name  "Slovakia" ;
+        ex:ioc   "SVK" .
+
+ex:Country-SI  rdf:type  ex:Country ;
+        ex:name  "Slovenia" ;
+        ex:ioc   "SLO" .
+
+ex:Country-SB  rdf:type  ex:Country ;
+        ex:name  "Solomon Islands" ;
+        ex:ioc   "SOL" .
+
+ex:Country-SO  rdf:type  ex:Country ;
+        ex:name  "Somalia" ;
+        ex:ioc   "SOM" .
+
+ex:Country-ZA  rdf:type  ex:Country ;
+        ex:name  "South Africa" ;
+        ex:ioc   "RSA" .
+
+ex:Country-ES  rdf:type  ex:Country ;
+        ex:name  "Spain" ;
+        ex:ioc   "ESP" .
+
+ex:Country-LK  rdf:type  ex:Country ;
+        ex:name  "Sri Lanka" ;
+        ex:ioc   "SRI" .
+
+ex:Country-SD  rdf:type  ex:Country ;
+        ex:name  "Sudan" ;
+        ex:ioc   "SUD" .
+
+ex:Country-SR  rdf:type  ex:Country ;
+        ex:name  "Suriname" ;
+        ex:ioc   "SUR" .
+
+ex:Country-SZ  rdf:type  ex:Country ;
+        ex:name  "Swaziland" ;
+        ex:ioc   "SWZ" .
+
+ex:Country-SE  rdf:type  ex:Country ;
+        ex:name  "Sweden" ;
+        ex:ioc   "SWE" .
+
+ex:Country-CH  rdf:type  ex:Country ;
+        ex:name  "Switzerland" ;
+        ex:ioc   "SUI" .
+
+ex:Country-SY  rdf:type  ex:Country ;
+        ex:name  "Syria" ;
+        ex:ioc   "SYR" .
+
+ex:Country-TW  rdf:type  ex:Country ;
+        ex:name  "Taiwan" ;
+        ex:ioc   "TPE" .
+
+ex:Country-TJ  rdf:type  ex:Country ;
+        ex:name  "Tajikistan" ;
+        ex:ioc   "TJK" .
+
+ex:Country-TZ  rdf:type  ex:Country ;
+        ex:name  "Tanzania" ;
+        ex:ioc   "TAN" .
+
+ex:Country-TH  rdf:type  ex:Country ;
+        ex:name  "Thailand" ;
+        ex:ioc   "THA" .
+
+ex:Country-TG  rdf:type  ex:Country ;
+        ex:name  "Togo" ;
+        ex:ioc   "TOG" .
+
+ex:Country-TO  rdf:type  ex:Country ;
+        ex:name  "Tonga" ;
+        ex:ioc   "TGA" .
+
+ex:Country-TT  rdf:type  ex:Country ;
+        ex:name  "Trinidad and Tobago" ;
+        ex:ioc   "TRI" .
+
+ex:Country-TN  rdf:type  ex:Country ;
+        ex:name  "Tunisia" ;
+        ex:ioc   "TUN" .
+
+ex:Country-TR  rdf:type  ex:Country ;
+        ex:name  "Turkey" ;
+        ex:ioc   "TUR" .
+
+ex:Country-TM  rdf:type  ex:Country ;
+        ex:name  "Turkmenistan" ;
+        ex:ioc   "TKM" .
+
+ex:Country-UG  rdf:type  ex:Country ;
+        ex:name  "Uganda" ;
+        ex:ioc   "UGA" .
+
+ex:Country-UA  rdf:type  ex:Country ;
+        ex:name  "Ukraine" ;
+        ex:ioc   "UKR" .
+
+ex:Country-AE  rdf:type  ex:Country ;
+        ex:name  "United Arab Emirates" ;
+        ex:ioc   "UAE" .
+
+ex:Country-GB  rdf:type  ex:Country ;
+        ex:name  "United Kingdom" ;
+        ex:ioc   "GBR" .
+
+ex:Country-US  rdf:type  ex:Country ;
+        ex:name  "United States" ;
+        ex:ioc   "USA" .
+
+ex:Country-UY  rdf:type  ex:Country ;
+        ex:name  "Uruguay" ;
+        ex:ioc   "URU" .
+
+ex:Country-UZ  rdf:type  ex:Country ;
+        ex:name  "Uzbekistan" ;
+        ex:ioc   "UZB" .
+
+ex:Country-VU  rdf:type  ex:Country ;
+        ex:name  "Vanuatu" ;
+        ex:ioc   "VAN" .
+
+ex:Country-VE  rdf:type  ex:Country ;
+        ex:name  "Venezuela" ;
+        ex:ioc   "VEN" .
+
+ex:Country-VN  rdf:type  ex:Country ;
+        ex:name  "Vietnam" ;
+        ex:ioc   "VIE" .
+
+ex:Country-VI  rdf:type  ex:Country ;
+        ex:name  "Virgin Islands*" ;
+        ex:ioc   "ISV" .
+
+ex:Country-YE  rdf:type  ex:Country ;
+        ex:name  "Yemen" ;
+        ex:ioc   "YEM" .
+
+ex:Country-ZM  rdf:type  ex:Country ;
+        ex:name  "Zambia" ;
+        ex:ioc   "ZAM" .
+
+ex:Country-ZW  rdf:type  ex:Country ;
+        ex:name  "Zimbabwe" ;
+        ex:ioc   "ZIM" .
