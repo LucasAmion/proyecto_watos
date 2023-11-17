@@ -5,7 +5,7 @@
 - iniciar sparql endpoint: java -jar fuseki-server.jar
 
 ## Queries:
-```sparql
+```sparql 1.1
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ex:  <http://ex.org/a#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -14,7 +14,7 @@ PREFIX data:  <http://ex.org/>
 
 # Jugadores Chilenos con más victorias:
 
-SELECT ?winner_name (COUNT(DISTINCT ?match) AS ?wins) 
+SELECT DISTINCT ?winner_name (COUNT(DISTINCT ?match) AS ?wins) 
 FROM NAMED data:atp_matches
 FROM NAMED data:countries
 WHERE {
@@ -81,7 +81,7 @@ WHERE {
              ex:winner ?player .
       ?player rdf:type ex:Player ;
               ex:height ?height .
-      BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height)
+      BIND (ROUND(FLOOR(?height/5)*5) AS ?player_height)
     }
     GROUP BY ?player_height
   }
@@ -92,7 +92,7 @@ WHERE {
              ex:loser ?player .
       ?player rdf:type ex:Player ;
               ex:height ?height .
-      BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height ) 
+      BIND (ROUND(FLOOR(?height/5)*5) AS ?player_height) 
     }
     GROUP BY ?player_height
   }
@@ -101,7 +101,7 @@ WHERE {
     WHERE {
       ?player rdf:type ex:Player ;
               ex:height ?height .
-      BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height)
+      BIND (ROUND(FLOOR(?height/5)*5) AS ?player_height)
     }
     GROUP BY ?player_height
   }
@@ -118,7 +118,7 @@ WHERE {
     WHERE {
       ?match rdf:type ex:Match ;
              ex:winner_age ?age .
-      BIND(ROUND(FLOOR(?age/5)*5) AS ?player_age ) 
+      BIND (ROUND(FLOOR(?age/5)*5) AS ?player_age) 
     }
     GROUP BY ?player_age
   }
@@ -127,7 +127,7 @@ WHERE {
     WHERE {
       ?match rdf:type ex:Match ;
            ex:loser_age ?age .
-      BIND(ROUND(FLOOR(?age/5)*5) AS ?player_age ) 
+      BIND (ROUND(FLOOR(?age/5)*5) AS ?player_age) 
     }
     GROUP BY ?player_age
   }
