@@ -69,4 +69,43 @@ WHERE {
 }
 ORDER BY ?player_hand
 
+# Porcentaje de victorias según altura:
+
+SELECT ?player_height ?num_players (?wins/(?wins+?losses)*100 AS ?win_percentage)
+FROM data:atp_matches # or data:wta_matches
+WHERE {
+  {
+  SELECT ?player_height  (COUNT(DISTINCT ?player) AS ?num_players) (COUNT(DISTINCT ?match) AS ?wins) 
+  WHERE {
+    ?match rdf:type ex:Match ;
+           ex:winner ?player .
+    ?player rdf:type ex:Player ;
+            ex:height ?height .
+    BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height)
+  }
+  GROUP BY ?player_height
+  }
+  {
+  SELECT ?player_height (COUNT(DISTINCT ?match) AS ?losses) 
+    WHERE {
+      ?match rdf:type ex:Match ;
+             ex:loser ?player .
+      ?player rdf:type ex:Player ;
+              ex:height ?height .
+      BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height ) 
+    }
+    GROUP BY ?player_height
+  }
+  {
+  SELECT ?player_height (COUNT(DISTINCT ?player) AS ?num_players) 
+    WHERE {
+      ?player rdf:type ex:Player ;
+              ex:height ?height .
+      BIND(ROUND(FLOOR(?height/5)*5) AS ?player_height)
+    }
+    GROUP BY ?player_height
+  }
+}
+ORDER BY ?player_height
+
 ```
