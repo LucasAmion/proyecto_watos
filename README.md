@@ -14,7 +14,7 @@ PREFIX data:  <http://ex.org/>
 
 # Jugadores Chilenos con más victorias:
 
-SELECT DISTINCT ?winner_name (COUNT(DISTINCT ?match) AS ?wins) 
+SELECT ?winner_name (COUNT(DISTINCT ?match) AS ?wins) 
 FROM NAMED data:atp_matches
 FROM NAMED data:countries
 WHERE {
