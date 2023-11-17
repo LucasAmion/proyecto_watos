@@ -5,7 +5,7 @@
 - iniciar sparql endpoint: java -jar fuseki-server.jar
 
 ## Queries:
-```sparql 1.1
+```sparql
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ex:  <http://ex.org/a#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
