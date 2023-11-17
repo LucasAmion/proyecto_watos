@@ -108,4 +108,30 @@ WHERE {
 }
 ORDER BY ?player_height
 
+# Porcentaje de victorias según edad:
+
+SELECT ?player_age (?wins+?losses AS ?matches_played) (?wins/?matches_played*100 as ?win_percentage)
+FROM data:atp_matches # or data:wta_matches
+WHERE {
+  {
+  SELECT ?player_age (COUNT(DISTINCT ?match) as ?wins) 
+  WHERE {
+    ?match rdf:type ex:Match ;
+           ex:winner_age ?age .
+    BIND(ROUND(FLOOR(?age/5)*5) AS ?player_age ) 
+  }
+  GROUP BY ?player_age
+  }
+  {
+  SELECT ?player_age (COUNT(DISTINCT ?match) as ?losses) 
+    WHERE {
+      ?match rdf:type ex:Match ;
+           ex:loser_age ?age .
+      BIND(ROUND(FLOOR(?age/5)*5) AS ?player_age ) 
+    }
+    GROUP BY ?player_age
+  }
+}
+ORDER BY ?player_age
+
 ```
