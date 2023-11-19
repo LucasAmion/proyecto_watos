@@ -113,7 +113,7 @@ WHERE {
 }
 ORDER BY ?player_age
 
-10 jugadores con más victorias:
+# 10 jugadores con más victorias:
 
 SELECT ?player_name (COUNT(DISTINCT ?match) AS ?wins) 
 FROM data:atp_matches # or data:wta_matches
@@ -127,7 +127,8 @@ GROUP BY ?player_name
 ORDER BY DESC(?wins)
 LIMIT 10
 
-Seguimiento anual 3 mejores jugadores:
+
+# Seguimiento anual 3 mejores jugadores:
 
 SELECT ?player_name ?year (COUNT(DISTINCT ?match) AS ?wins) 
 FROM data:atp_matches # or data:wta_matches
