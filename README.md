@@ -12,27 +12,6 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX data:  <http://ex.org/>
 
-# Jugadores Chilenos con más victorias:
-
-SELECT ?winner_name (COUNT(DISTINCT ?match) AS ?wins) 
-FROM NAMED data:atp_matches
-FROM NAMED data:countries
-WHERE {
-  GRAPH data:countries {
-    ?country ex:ioc ?ioc ;
-             ex:name ?country_name .
-  } .
-  GRAPH data:atp_matches {
-    ?match ex:winner ?winner .
-    ?winner ex:name ?winner_name ;
-            ex:country ?ioc .
-  } .
-}
-GROUP BY ?winner_name ?country_name
-HAVING(?country_name='Chile') 
-ORDER BY DESC(?wins)
-LIMIT 10
-
 # Porcentaje de victorias según mano dominante:
 
 SELECT ?player_hand ?num_players (?wins/(?wins+?losses)*100 AS ?win_percentage)
@@ -133,5 +112,39 @@ WHERE {
   }
 }
 ORDER BY ?player_age
+
+10 jugadores con más victorias:
+
+SELECT ?player_name (COUNT(DISTINCT ?match) AS ?wins) 
+FROM data:atp_matches # or data:wta_matches
+WHERE {
+  ?match rdf:type ex:Match ;
+         ex:winner ?player .
+  ?player rdf:type ex:Player ;
+          ex:name ?player_name .
+}
+GROUP BY ?player_name 
+ORDER BY DESC(?wins)
+LIMIT 10
+
+Seguimiento anual 3 mejores jugadores:
+
+SELECT ?player_name ?year (COUNT(DISTINCT ?match) AS ?wins) 
+FROM data:atp_matches # or data:wta_matches
+WHERE {
+  ?match rdf:type ex:Match ;
+         ex:tourney ?tourney ;
+         ex:winner ?player .
+  ?tourney rdf:type ex:Tournament ;
+           ex:tourney_date ?date.
+  ?player rdf:type ex:Player ;
+          ex:name ?player_name .
+  BIND (YEAR(?date) AS ?year)
+}
+GROUP BY ?player_name ?year
+HAVING (?player_name = 'Roger Federer' || # Serena Williams
+        ?player_name = 'Rafael Nadal' || # Maria Sharapova
+        ?player_name = 'Novak Djokovic') # Venus Williams
+ORDER BY ?year DESC(?wins)
 
 ```
