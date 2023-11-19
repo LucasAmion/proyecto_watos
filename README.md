@@ -75,7 +75,7 @@ SELECT ?player_height ?num_players (?wins/(?wins+?losses)*100 AS ?win_percentage
 FROM data:atp_matches # or data:wta_matches
 WHERE {
   {
-    SELECT ?player_height  (COUNT(DISTINCT ?player) AS ?num_players) (COUNT(DISTINCT ?match) AS ?wins) 
+    SELECT ?player_height (COUNT(DISTINCT ?match) AS ?wins) 
     WHERE {
       ?match rdf:type ex:Match ;
              ex:winner ?player .

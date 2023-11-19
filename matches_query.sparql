@@ -65,7 +65,7 @@ CONSTRUCT {
 WHERE {
   BIND (IRI(CONCAT('http://ex.org/a#', replace(?winner_name, " ", "-"))) AS ?WINNER_IRI)
   BIND (xsd:integer(?winner_ht) AS ?WINNER_HEIGHT)
-  FILTER(?winner_hand != "U" && BOUND(?winner_ht))
+  FILTER(?winner_hand != "U")
 }
 
 CONSTRUCT {
@@ -79,5 +79,5 @@ CONSTRUCT {
 WHERE {
   BIND (IRI(CONCAT('http://ex.org/a#', replace(?loser_name, " ", "-"))) AS ?LOSER_IRI)
   BIND (xsd:integer(?loser_ht) AS ?LOSER_HEIGHT)
-  FILTER (?loser_hand != "U" && BOUND(?loser_ht))
+  FILTER (?loser_hand != "U")
 }
