@@ -1,8 +1,17 @@
 # Análisis dataset partidos profesionales de tennis
 ## Comandos usados:
-- unir archivos csv: awk 'NR==1||FNR>1' atp_matches_*.csv > atp_matches.csv
-- convertir a rdf: tarql --dedup 2000000 matches_query.sparql archive/atp_matches.csv > atp_matches.ttl
-- iniciar sparql endpoint: java -jar fuseki-server.jar
+- unir archivos csv:
+  ```bash
+  awk 'NR==1||FNR>1' atp_matches_*.csv > atp_matches.csv
+  ```
+- convertir a rdf:
+  ```bash
+  tarql --dedup 2000000 matches_query.sparql archive/atp_matches.csv > atp_matches.ttl
+  ```
+- iniciar sparql endpoint:
+  ```bash
+  java -jar fuseki-server.jar
+  ```
 
 ## Queries:
 ```sparql
