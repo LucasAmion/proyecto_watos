@@ -148,4 +148,22 @@ HAVING (?player_name = 'Roger Federer' || # Serena Williams
         ?player_name = 'Novak Djokovic') # Venus Williams
 ORDER BY ?year DESC(?wins)
 
+# 10 países con más victorias:
+
+SELECT ?country_name (COUNT(DISTINCT ?match) AS ?wins) 
+FROM data:atp_matches # or data:wta_matches
+FROM data:countries
+WHERE {
+  ?match rdf:type ex:Match ;
+         ex:winner ?player .
+  ?player rdf:type ex:Player ;
+          ex:country ?ioc .
+  ?country rdf:type ex:Country ;
+          ex:name ?country_name ;
+          ex:ioc ?ioc .
+}
+GROUP BY ?country_name
+ORDER BY DESC(?wins)
+LIMIT 10
+
 ```
